@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width: 400px) {
+    #search {
+        @apply w-[300px];
+    }
+}
+
+.result {
+    @apply mt-5 mx-auto border border-red-700 border-2 rounded-md grid;
+    gap: 20px; /* Adjust as needed */
+}
+
+.result img{
+    @apply w-full rounded-tr-md rounded-tl-md h-[200px]
+}
+
+#text-container{
+    @apply p-2
+}
+#text-container h1{
+    @apply mb-2 text-sm font-bold
+}
+#text-container p{
+    @apply text-[.8rem] mb-2
+}
+#text-container a{
+    @apply ml-[160px] bg-red-600 px-2 py-1 rounded-md text-white
+    hover:bg-red-950 transition
+}
+
+#content {
+    @apply grid w-[90%] mx-auto gap-4 md:gap-2;
+    grid-template-columns: repeat(auto-fill,minmax(230px, 1fr));
+    max-width: 900px;
+}

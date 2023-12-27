@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/dist/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="mt-5" id="container">
+        <h1 class="text-center bg-red-600 p-4 font-bold text-white text-xl tracking-wider shadow-lg fixed top-0 w-full z-10">News Website</h1>
+
+        <div class="mx-auto grid grid-cols-[9fr,3fr] w-[90%] max-w-[400px] gap-2 md:gap-4 mt-20">
+            <input type="text" class="border w-[200px] rounded-[.3em] px-2 py-[.3em] outline-none placeholder:text-xs border-red-500" placeholder="Search articles, topics, keywords..." id="search">
+            <button class="bg-red-600 px-2 py-1 rounded-md text-white" id="search-btn">Search</button>
+        </div>
+
+        <div class="grid grid-cols-[auto,auto,auto] mt-4 gap-2 w-[90%] mx-auto max-w-[500px] md:grid-cols-[auto,auto,auto,auto,auto,auto] text-center" id="btn-container"></div>
+        <div id="content"></div>
+    </div>
+</body>
+</html>
