@@ -31,4 +31,8 @@ The categories and styling can be customized by modifying the CSS and JavaScript
 - JavaScript
 - NewsAPI
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://cjstyles6.github.io/<repo>/)
+## Live Demo
+
+You can view a live demo of the app here:
+
+- [Live Demo Link](https://cjstyles6.github.io/cjstyles6.github.io/)
