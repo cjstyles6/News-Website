@@ -30,3 +30,5 @@ The categories and styling can be customized by modifying the CSS and JavaScript
 - Tailwind CSS
 - JavaScript
 - NewsAPI
+
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://cjstyles6.github.io/<repo>/)
