@@ -30,9 +30,3 @@ The categories and styling can be customized by modifying the CSS and JavaScript
 - Tailwind CSS
 - JavaScript
 - NewsAPI
-
-## Live Demo
-
-You can view a live demo of the app here:
-
-- [Live Demo Link](https://cjstyles6.github.io/cjstyles6.github.io/)
