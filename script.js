@@ -7,15 +7,14 @@ buttons.forEach(category => {
     const button = document.createElement('button');
     button.innerText = category.charAt(0).toUpperCase() + category.slice(1);
     button.classList.add('bg-red-600', 'px-2', 'py-1', 'rounded-md', 'text-white', 'mr-2', 'mb-2', 'block');
-    button.addEventListener('click', () => searchNews(category));
+    button.addEventListener('click', (e) => searchNews(category));
     buttonContainer.appendChild(button);
 });
-
 async function searchNews(category) {
     const search = document.getElementById("search").value;
     const baseurl = 'https://newsapi.org/v2/everything';
     const url = `${baseurl}?q=${search}&apiKey=${apiKey}`;
-    const categoryUrl = `https://newsapi.org/v2/top-headlines/sources?category=${buttons[0]}&apiKey=${apiKey}`;
+    const categoryUrl = `https://newsapi.org/v2/top-headlines/sources?category=${category}&apiKey=${apiKey}`;
 
     try {
         let resp;
@@ -24,23 +23,24 @@ async function searchNews(category) {
         if (search.length > 0) {
             resp = await fetch(url);
             data = await resp.json();
+            console.log("len > 0");
         } else {
             resp = await fetch(categoryUrl);
             data = await resp.json();
-            console.log(data);
+            console.log("len < 0 ",data);
         }
 
         const content = document.getElementById("content");
         content.innerHTML = "";
 
-        data.articles.forEach((article) => {
-            const { author, title, description, url, urlToImage } = article;
+        data.sources.forEach((article) => {
+            const { author, name, description, url, urlToImage } = article;
 
             const result = document.createElement("div");
             result.classList.add("result");
             result.innerHTML = `
                 <div id="text-container">
-                    <h1>${title}</h1>
+                    <h1>${name}</h1>
                     <p>${description}</p>
                     <a href="${url}" target="_blank">Read More</a>
                 </div>
