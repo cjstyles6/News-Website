@@ -23,11 +23,11 @@ async function searchNews(category) {
         if (search.length > 0) {
             resp = await fetch(url);
             data = await resp.json();
-            console.log("len > 0");
+          
         } else {
             resp = await fetch(categoryUrl);
             data = await resp.json();
-            console.log("len < 0 ",data);
+           
         }
 
         const content = document.getElementById("content");
