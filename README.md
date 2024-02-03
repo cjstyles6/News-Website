@@ -12,6 +12,7 @@ This is a news website built with HTML, CSS, and JavaScript. It allows users to 
 - Mobile friendly responsive design
 
 **Usage**
+
 To use the news website:
 
 1. Clone the repository
@@ -20,6 +21,7 @@ To use the news website:
 4. Browse the results displayed from the NewsAPI
 
 **Customization**
+
 The NewsAPI key is required for fetching news data. You can sign up for a free developer account to obtain an API key.
 
 The categories and styling can be customized by modifying the CSS and JavaScript files.
